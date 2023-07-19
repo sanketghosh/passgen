@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-poppins;
+  }
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-900 min-h-screen selection:bg-zinc-900 selection:text-zinc-50;
+}
+
+::-webkit-scrollbar {
+  @apply w-0;
+}
+
+.generalBtnStyle {
+  @apply bg-zinc-900 px-5 text-sm rounded-md hover:bg-opacity-95 transition-all font-medium text-zinc-50;
+}
+
+.gradientText {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background: #333; /* Replace "red" with the desired color */
+}
